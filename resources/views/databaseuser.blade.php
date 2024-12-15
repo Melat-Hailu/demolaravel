@@ -1,4 +1,4 @@
-<h1> database user </h1>
+<!-- <h1> database user </h1>
 <div>
     <h3>Database Users Found In Your System</h3>
     <table border="1">
@@ -23,4 +23,4 @@
         </tr>
         @endforeach
     </table>
-</div>
+</div> -->
