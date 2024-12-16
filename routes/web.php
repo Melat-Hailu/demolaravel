@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\UserController;
+use  App\Http\Controllers\FlightController;
+
+
 // use  App\Http\Middleware\AgeCheck;
 
 // Route::get('/', function () {
@@ -20,3 +23,7 @@ Route::get('user', [UserController::class, 'users']);
 //     Route::view('m3', 'middleware');
 //     Route::view('m4', 'middleware');
 // });
+
+Route::get('/flight', [FlightController::class, 'index'])->name('index');
+Route::get('/create', [FlightController::class, 'create'])->name('create');
+Route::post('/flight', [FlightController::class, 'store'])->name('store');
