@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use  App\Http\Controllers\UserController;
-use  App\Http\Controllers\FlightController;
+// use  App\Http\Controllers\UserController;
+// use  App\Http\Controllers\FlightController;
 
 
 // use  App\Http\Middleware\AgeCheck;
@@ -11,7 +11,7 @@ use  App\Http\Controllers\FlightController;
 //     return view('welcome');
 // });
 
-Route::get('user', [UserController::class, 'users']);
+// Route::get('user', [UserController::class, 'users']);
 
 // Route::view('nameurl', 'AgeCheck')->middleware(AgeCheck::class);
 // Route::view('middleware', 'middleware')->middleware('check1');
@@ -24,6 +24,9 @@ Route::get('user', [UserController::class, 'users']);
 //     Route::view('m4', 'middleware');
 // });
 
-Route::get('/flight', [FlightController::class, 'index'])->name('index');
-Route::get('/create', [FlightController::class, 'create'])->name('create');
-Route::post('/flight', [FlightController::class, 'store'])->name('store');
+// Route::get('/flight', [FlightController::class, 'index'])->name('index');
+// Route::get('/create', [FlightController::class, 'create'])->name('create');
+// Route::post('/flight', [FlightController::class, 'store'])->name('store');
+use  App\Http\Controllers\DbQueryBuilder;
+
+Route::get('querbuilder', [DbQueryBuilder::class, 'Query']);
