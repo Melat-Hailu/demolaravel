@@ -27,6 +27,29 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/flight', [FlightController::class, 'index'])->name('index');
 // Route::get('/create', [FlightController::class, 'create'])->name('create');
 // Route::post('/flight', [FlightController::class, 'store'])->name('store');
-use  App\Http\Controllers\DbQueryBuilder;
+// use  App\Http\Controllers\DbQueryBuilder;
 
-Route::get('querbuilder', [DbQueryBuilder::class, 'Query']);
+// Route::get('querbuilder', [DbQueryBuilder::class, 'Query']);
+
+
+// use App\Http\Controllers\RouteMethodExample;
+
+// Route::get('methodexample', [RouteMethodExample::class, 'get']);
+// Route::get('methodexample', [RouteMethodExample::class, 'post']);
+// Route::get('methodexample', [RouteMethodExample::class, 'put']);
+// Route::get('methodexample', [RouteMethodExample::class, 'delete']);
+
+// Route::any('methodexample', [RouteMethodExample::class, 'any']);
+
+// Route::view('form', 'RouteMethodExample');
+
+
+// use App\Http\Controllers\SessionController;
+
+Route::view('user-form', 'RequestClass');
+
+use App\Http\Controllers\RequestClass;
+
+Route::post('user-form2', [RequestClass::class, 'login']);
+// Route::view('loginsession', 'SessionView1');
+// Route::view('profilesession', 'SessionView2');
