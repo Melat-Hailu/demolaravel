@@ -46,10 +46,10 @@ use Illuminate\Support\Facades\Route;
 
 // use App\Http\Controllers\SessionController;
 
-Route::view('user-form', 'RequestClass');
+// Route::view('user-form', 'RequestClass');
 
-use App\Http\Controllers\RequestClass;
+// use App\Http\Controllers\RequestClass;
 
-Route::post('user-form2', [RequestClass::class, 'login']);
+// Route::post('user-form2', [RequestClass::class, 'login']);
 // Route::view('loginsession', 'SessionView1');
 // Route::view('profilesession', 'SessionView2');
